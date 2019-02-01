@@ -26,15 +26,15 @@ chart.changeVal(axis,ID,newVal)
     changes a value. ya know
 '''
 
-#import Point
+import Point
 
 class Chart:
     def __init__(self, xVals, yVals): #the lengths of xVals and yVals must be the same
-        self.vals = [] #a 2D array that stores MUTABLE x's and y's
-        self.vals.append(xVals) #add the x value array
-        self.vals.append(yVals) #add the y value array
+        self.vals = [] #a 1D array that stores POINT objects
+        #self.vals.append(xVals) #add the x value array
+        #self.vals.append(yVals) #add the y value array
 
-        self.size = len(self.vals[0]) #the number of actual x&y pairs in the object.
+        self.size = len(self.vals) #the number of actual x&y pairs in the object.
 
     def getSinglePoint(self,ID): #returns a single tuple of the corresponding x and y's.
         return (self.vals[0][ID], self.vals[1][ID])
