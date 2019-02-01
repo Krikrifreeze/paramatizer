@@ -1,6 +1,7 @@
 '''
 use this class as an object for each individual point on a Chart object
-
+x = x value
+y = y value (usually a price value)
 
 '''
 
